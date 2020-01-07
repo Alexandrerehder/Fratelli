@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: BigNoodleTitling;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: white;
+    color: black;
+}
+.container {
+    widows: 100%;
+    height: 100%;
+    /* CSS Smooth Sroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    padding: 15px 0px;
+    padding-left: 30px;
+    float: left;
+    text-transform: uppercase;
+}
+.menu{
+    float: right;
+    line-height: 100px;
+    font-size: 25px;
+}
+.menu a{
+    margin-right: 20px;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+i{
+    margin-right: 30px;
+}
+.show-menu-btn, .hide-menu-btn{
+    transition: 0,4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn{
+    float: right;
+}
+.show-menu-btn i{
+    line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+    color:#239B78;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+@media screen and (max-width:875px) {
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+    .menu{
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5E5E5E;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+        color: white;
+    }
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+}
+/* SEÇÕES */
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+}
+.h1iniciol1 {
+    color: white;
+    margin-top: -200px;
+
+}
+.h1iniciol2 {
+    color: white;
+
+}
+
+section h1 {
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+section p {
+    font-size: 1.5rem;
+}
+
+section#inicio {
+    align-items: center;
+    justify-content: center;
+    background: url('https://i.imgur.com/cMmkNAT.png') no-repeat center center/
+    cover;
+    background-color: #239B78;
+    padding-top: 1%;
+    text-align: center;
+}
+section#sobre {
+    align-items: center;
+    justify-content: center;
+    background: #239B78;
+}
+.h1sobre {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.psobre {
+display: inline-block;
+width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+section#servicos{
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+.h1serv {
+    margin-bottom: 60px;
+}
+figure {
+    float: left;
+}
+.alinhamento {
+    margin-top: 20px;
+    width: 600px;
+}
+.servicel2 {
+    color: #797979;
+}
+
+
+section#contato{
+    align-items: center;
+    justify-content: center;
+    background: #5E5E5E;
+    width: 100%;
+}
+/* BOTÃO SOLICITAR ORÇAMENTOS - INICIO */
+.solicitarorc {
+    align-self: center;
+    margin-top: 60px;
+    width: 250px;
+    height: 70px;
+    text-decoration: none;
+    line-height: 70px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0);
+    color: white;
+    border: 5px solid #239B78;
+    border-radius: 40px;
+    font-family: BigNoodleTitling;
+    font-size: 30px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .solicitarorc:hover{
+    background-color: #239B78;
+    color: white;
+  }
+/* FALE COM A GENTE */
+input[type=text], [type=email] {
+    margin-bottom: 20px;
+    padding: 25px 25px;
+    display: block;
+    height: 10px;
+    width: 600px;
+    font-size: 25px;
+    font-family: BigNoodleTitling;
+    border-radius: 20px;
+    border: none;
+    background-color: #C9C9C9;
+    color: #5E5E5E;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    width: 600px;
+    display: block;
+    height: 250px;
+    font-size: 25px;
+    font-family: BigNoodleTitling;
+    border-radius: 20px;
+    border: none;
+    background-color: #C9C9C9;
+    color: #5E5E5E;
+  }
+  
+  input[type=submit] {
+      
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 55px;
+    text-decoration: none;
+    line-height: center;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0);
+    color: white;
+    border: 5px solid #239B78;
+    border-radius: 40px;
+    font-family: BigNoodleTitling;
+    font-size: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .btnenviar:hover{
+    background-color: #239B78;
+    color: white;
+  }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 0px;
+}
+
+.h1contatol1 {
+  color: white;
+  margin-top: 100px;
+}
+
+.p1contatol2 {
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.plineheight {
+  line-height: 50px;
+}
+
+/* max-width */
+@media screen and (max-width: 750px) {
+    input[type=text], [type=email] {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    textarea {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .h1sobre {
+    margin-top: 90px;
+    }
+
+    .psobre {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+/* max-width */
+@media screen and (max-width: 500px) {
+    input[type=text], [type=email] {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    textarea {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* max-width */
+@media screen and (max-width: 365px) {
+    .logo{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    figure{
+        visibility: hidden;
+        opacity: 0;
+        width: 110px;
+    }
+}
+
