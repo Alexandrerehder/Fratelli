@@ -13,14 +13,23 @@
 */
 .gallery {
   position: relative;
-  height: 900px;
+  height: 60%;
+  margin-top: 2%;
+  width: 60%;
+  align-self: center;
 }
+
 .gallery .item {
   height: 900px;
   overflow: hidden;
   text-align: center;
   background: #5E5E5E;
+  clear: both;
+  align-self: center;
+  
 }
+
+
 .gallery .controls {
   position: absolute;
   bottom: 0;
